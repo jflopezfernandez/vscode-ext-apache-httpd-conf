@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+vsce package && code --install-extension apache-httpd-conf-0.0.1.vsix && code .
+

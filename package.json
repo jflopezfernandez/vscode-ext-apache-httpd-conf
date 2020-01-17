@@ -1,0 +1,34 @@
+{
+  "name": "apache-httpd-conf",
+  "displayName": "apache-httpd-conf",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "jflopezfernandez",
+  "scripts": {
+    "test": "./test-extension"
+  },
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "apache-httpd-conf",
+      "aliases": ["apache.conf", "apache"],
+      "extensions": [".conf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "apache-httpd-conf",
+      "scopeName": "source.apache-httpd-conf",
+      "path": "./syntaxes/apache-httpd-conf.tmLanguage.json"
+    }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jflopezfernandez/vscode-ext-apache-httpd-conf"
+  },
+  "homepage": "https://github.com/jflopezfernandez/vscode-ext-apache-httpd-conf"
+}
