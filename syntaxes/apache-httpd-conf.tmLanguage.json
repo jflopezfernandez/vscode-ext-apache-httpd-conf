@@ -15,10 +15,16 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.apache-httpd-conf",
-				"match": "\\b(Server(Root|Admin|Name)|(Script)?Alias|Listen|LoadModule|SSLRandomSeed|ErrorDocument|AddHandler|Include|User|Group|SetEnv|Mutex|DocumentRoot|AllowOverride|Options|DirectoryIndex|Require|((Custom)?Log(Format)?))\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.apache-httpd-conf",
+					"match": "\\b(Server(Root|Admin|Name)|AddType|(Script)?Alias|Listen|LoadModule|Redirect|Scriptsock|SSLRandomSeed|ErrorDocument|AddHandler|Include|User|Group|SetEnv|Mutex|DocumentRoot|AllowOverride|Options|DirectoryIndex|Require|((Custom|Error)?Log(Format|Level)?))\\b"
+				},
+				{
+					"name": "keyword.operator.apache-httpd.conf",
+					"match": "!"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.apache-httpd-conf",
