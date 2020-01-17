@@ -2,6 +2,9 @@
 # Ignore Extension Package File
 *.vsix
 
+# Ignore Test File
+test.conf
+
 # Logs
 logs
 *.log

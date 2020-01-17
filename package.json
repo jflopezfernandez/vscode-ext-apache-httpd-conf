@@ -1,7 +1,7 @@
 {
   "name": "apache-httpd-conf",
-  "displayName": "apache-httpd-conf",
-  "description": "",
+  "displayName": "Apache HTTPD Server Configuration",
+  "description": "Language support for Apache configuration files",
   "version": "0.0.1",
   "publisher": "jflopezfernandez",
   "scripts": {

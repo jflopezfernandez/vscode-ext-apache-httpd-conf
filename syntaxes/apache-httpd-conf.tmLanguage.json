@@ -1,19 +1,23 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "apache-httpd-conf",
+	"scopeName": "source.apache-httpd-conf",
 	"patterns": [
 		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.apache-httpd-conf",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(Server(Root|Admin|Name)|(Script)?Alias|Listen|LoadModule|SSLRandomSeed|ErrorDocument|AddHandler|Include|User|Group|SetEnv|Mutex|DocumentRoot|AllowOverride|Options|DirectoryIndex|Require|((Custom)?Log(Format)?))\\b"
 			}]
 		},
 		"strings": {
@@ -26,7 +30,11 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.line.number-sign.apache-httpd-conf",
+			"begin": "#",
+			"end": "\n"
 		}
-	},
-	"scopeName": "source.apache-httpd-conf"
+	}
 }
